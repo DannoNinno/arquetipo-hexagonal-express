@@ -1,0 +1,66 @@
+{    
+    "include": [
+        "**/*",
+        "src/app/sin-general.swagger.ts"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@root/*": [
+                "./"
+            ],
+            "@controllers/*": [
+                "src/app/controllers/*"
+            ],
+            "@routes/*": [
+                "src/app/routes/*"
+            ],
+            "@express/*": [
+                "src/infrastructure/express/*"
+            ],
+            "@repositories/*": [
+                "src/infrastructure/repositories/*"
+            ],
+        },
+        "outDir": "./build",
+        "allowJs": false,
+        "allowUmdGlobalAccess": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "assumeChangesOnlyAffectDirectDependencies": false,
+        "checkJs": false,
+        "disableSizeLimit": false,
+        "generateCpuProfile": "profile.cpuprofile",
+        "jsx": "react",
+        "jsxFactory": "React.createElement",
+        "jsxFragmentFactory": "React.Fragment",
+        "target": "ES2015",
+        "lib": [
+            "ES6"
+        ],
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitUseStrict": false,
+        "noStrictGenericChecks": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "preserveConstEnums": false,
+        "removeComments": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "suppressExcessPropertyErrors": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "useDefineForClassFields": false,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
