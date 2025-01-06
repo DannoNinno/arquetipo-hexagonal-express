@@ -11,7 +11,7 @@ import morganMiddleware from '../middlewares/morgan';
 import apiHealth from '../api-health/api-health.routes';
 import { errorHandler } from '../middlewares/errorHandler';
 
-import routerDoc from '../../infrastructure/document/config.swagger';
+import routerDoc from '../docs/config.swagger';
 import AppRouter from '../../app/router/enrutador';
 
 const app = express();
